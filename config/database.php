@@ -70,11 +70,11 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => $databaseUrl['host'],
-            'port' => $databaseUrl['port'],
-            'database' => substr($databaseUrl['path'], 1),
-            'username' => $databaseUrl['user'],
-            'password' => $databaseUrl['pass'],
+            'host' => $DATABASE_URL['host'],
+            'port' => $DATABASE_URL['port'],
+            'database' => substr($DATABASE_URL['path'], 1),
+            'username' => $DATABASE_URL['user'],
+            'password' =>$DATABASE_URL['pass'],
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
