@@ -69,14 +69,17 @@ return [
         ],
 
         'pgsql' => [
-           'driver'   => 'pgsql',
-            'host'     => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
+            'driver' => 'pgsql',
+            'host' => $databaseUrl['host'],
+            'port' => $databaseUrl['port'],
+            'database' => substr($databaseUrl['path'], 1),
+            'username' => $databaseUrl['user'],
+            'password' => $databaseUrl['pass'],
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'schema' => 'public',
+            'sslmode' => 'prefer',
         ],
 
         'sqlsrv' => [
