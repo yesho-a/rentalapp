@@ -2,10 +2,7 @@
 
 use Illuminate\Support\Str;
 $DATABASE_URL=parse_url('postgres://dphicaieeqekos:b305f04d8d64c5fdddda0dc2798dd594e620b7f950c9d8fb9ecba16af56ea5f7@ec2-52-44-31-100.compute-1.amazonaws.com:5432/d528f4cn20831v');
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
+
 
 
 return [
