@@ -136,10 +136,10 @@ class TenantController extends Controller
 
    $pdf = PDF::loadView('invoice',compact('tenant'))->setPaper('a4','landscape');
  
-  $pdf->setOptions(['dpi' => 150,'isRemoteEnabled' => true,'tempDir' => public_path(),
-  'chroot'  => public_path(),]);
+ // $pdf->setOptions(['dpi' => 150,'isRemoteEnabled' => true,'tempDir' => public_path(),
+  //'chroot'  => public_path(),]);
   //dd($pdf);
-       return $pdf->stream('invoice.pdf');
+       return $pdf->download('invoice.pdf');
 
     }
     public function generatePDF()
