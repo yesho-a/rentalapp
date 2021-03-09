@@ -43,7 +43,7 @@
                       <a href="/tenant/create" class="btn btn-primary" id="create"><b>Add Tenant</b></a>
                       <!---<a href="/payments/create" class="btn btn-warning"><b>Make payments</b></a>-->
                       <a href="/payment/create" id="li-modal" class="btn btn-dark text-light"><b>Make Payment</b></a>
-                      <a href="/simon" id="li-modal" class="btn btn-danger text-light">
+                      <a href="/pdf" id="li-modal" class="btn btn-danger text-light">
                         <b>Generate PDF</b></a>
                     </span>
 
